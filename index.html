@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hajj 2027 — Complete Group Guide (Pakistan)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-900:#082f2b; --teal-800:#0d4a43; --teal-700:#0f5f55; --teal-600:#137e6f; --teal-100:#e3f2ef; --teal-50:#f3faf8;
+    --gold-700:#a3791b; --gold-600:#c9a227; --gold-100:#faf1d9;
+    --coral-600:#c9522f; --coral-100:#fbe9e2;
+    --ink:#1c211f; --ink-soft:#4c5551; --ink-mute:#7c847f;
+    --line:#e2ddcf; --cream:#faf8f3; --card:#ffffff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Inter', sans-serif; color:var(--ink); background:var(--cream);
+    line-height:1.65; font-size:16px;
+  }
+  h1,h2,h3,h4{ font-family:'Poppins', sans-serif; font-weight:600; color:var(--teal-900); }
+  a{ color:var(--teal-700); }
+  img.icon{ display:block; }
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+  .section{ padding:64px 0; }
+  .section-tight{ padding:40px 0; }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--teal-700); background:var(--teal-100); padding:6px 14px; border-radius:999px; margin-bottom:16px;
+  }
+  h2.title{ font-size:30px; margin-bottom:10px; }
+  p.lead{ font-size:17px; color:var(--ink-soft); max-width:680px; margin-bottom:32px; }
+  .grid{ display:grid; gap:20px; }
+  .grid-2{ grid-template-columns:repeat(2,1fr); }
+  .grid-3{ grid-template-columns:repeat(3,1fr); }
+  .grid-4{ grid-template-columns:repeat(4,1fr); }
+  .grid-5{ grid-template-columns:repeat(5,1fr); }
+  @media(max-width:900px){ .grid-3,.grid-4,.grid-5{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:600px){ .grid-2,.grid-3,.grid-4,.grid-5{ grid-template-columns:1fr; } }
+
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:26px; }
+  .card h3{ font-size:18px; margin-bottom:8px; }
+  .card .meta{ font-size:13px; color:var(--ink-mute); margin-bottom:14px; }
+  .badge{ display:inline-block; font-size:12px; font-weight:600; padding:3px 10px; border-radius:999px; }
+  .badge-teal{ background:var(--teal-100); color:var(--teal-700); }
+  .badge-gold{ background:var(--gold-100); color:var(--gold-700); }
+  .badge-coral{ background:var(--coral-100); color:var(--coral-600); }
+
+  table{ width:100%; border-collapse:collapse; background:var(--card); border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); }
+  th,td{ padding:14px 16px; text-align:left; font-size:14.5px; border-bottom:1px solid var(--line); }
+  th{ background:var(--teal-900); color:#fff; font-family:'Poppins',sans-serif; font-weight:500; font-size:13px; text-transform:uppercase; letter-spacing:.04em; }
+  tr:last-child td{ border-bottom:none; }
+  tr:nth-child(even) td{ background:var(--teal-50); }
+
+  .callout{ border-radius:var(--radius); padding:24px 26px; display:flex; gap:16px; align-items:flex-start; }
+  .callout-teal{ background:var(--teal-50); border:1px solid var(--teal-100); }
+  .callout-gold{ background:var(--gold-100); border:1px solid #f0dfab; }
+  .callout-coral{ background:var(--coral-100); border:1px solid #f3cabb; }
+  .callout p{ font-size:15px; color:var(--ink-soft); }
+  .callout strong{ color:var(--ink); }
+
+  /* HERO */
+  .hero{
+    position:relative; overflow:hidden;
+    background:linear-gradient(160deg, var(--teal-900) 0%, var(--teal-800) 55%, var(--teal-700) 100%);
+    color:#fff; padding:80px 0 60px;
+  }
+  .hero .wrap{ position:relative; z-index:2; }
+  .hero-pattern{ position:absolute; inset:0; opacity:.12; z-index:1; }
+  .hero-eyebrow{
+    display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+    background:rgba(255,255,255,.12); padding:7px 16px; border-radius:999px; margin-bottom:22px;
+  }
+  .hero h1{ color:#fff; font-size:42px; line-height:1.2; max-width:760px; margin-bottom:18px; }
+  .hero p.sub{ font-size:18px; color:#d9ece8; max-width:620px; margin-bottom:34px; }
+  .hero-stats{ display:flex; gap:14px; flex-wrap:wrap; }
+  .stat-pill{
+    background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:12px;
+    padding:14px 20px; min-width:150px;
+  }
+  .stat-pill .num{ font-family:'Poppins',sans-serif; font-size:22px; font-weight:600; color:#fff; }
+  .stat-pill .lbl{ font-size:12.5px; color:#bcd8d1; margin-top:2px; }
+
+  /* NAV */
+  .navbar{ background:var(--teal-900); position:sticky; top:0; z-index:50; border-bottom:1px solid rgba(255,255,255,.08); }
+  .navbar .wrap{ display:flex; align-items:center; justify-content:space-between; padding:14px 24px; }
+  .navbar .brand{ color:#fff; font-family:'Poppins',sans-serif; font-weight:600; font-size:16px; display:flex; align-items:center; gap:10px; }
+  .navlinks{ display:flex; gap:22px; flex-wrap:wrap; }
+  .navlinks a{ color:#cfe6e0; text-decoration:none; font-size:13.5px; font-weight:500; }
+  .navlinks a:hover{ color:#fff; }
+
+  /* TIMELINE */
+  .timeline{ position:relative; padding-left:36px; }
+  .timeline::before{ content:""; position:absolute; left:11px; top:6px; bottom:6px; width:2px; background:var(--line); }
+  .tstep{ position:relative; padding-bottom:34px; }
+  .tstep:last-child{ padding-bottom:0; }
+  .tstep::before{
+    content:""; position:absolute; left:-36px; top:2px; width:24px; height:24px; border-radius:50%;
+    background:var(--teal-700); border:4px solid var(--teal-50);
+  }
+  .tstep.done::before{ background:var(--gold-600); }
+  .tstep h4{ font-size:16px; margin-bottom:4px; }
+  .tstep .when{ font-size:12.5px; color:var(--ink-mute); font-weight:600; margin-left:8px; }
+  .tstep p{ font-size:14.5px; color:var(--ink-soft); margin-top:4px; max-width:600px; }
+  .amount-tag{ display:inline-block; margin-top:8px; font-size:12.5px; font-weight:600; background:var(--teal-100); color:var(--teal-700); padding:3px 10px; border-radius:999px; }
+
+  /* bank chips */
+  .bank-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  @media(max-width:700px){ .bank-grid{ grid-template-columns:repeat(2,1fr); } }
+  .bank-chip{
+    background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+    font-size:13.5px; font-weight:500; display:flex; align-items:center; gap:10px;
+  }
+  .bank-chip .dot{ width:8px; height:8px; border-radius:50%; background:var(--teal-600); flex-shrink:0; }
+  .bank-chip.islamic .dot{ background:var(--gold-600); }
+
+  /* section divider illustration */
+  .divider-illustration{ display:flex; justify-content:center; padding:36px 0; }
+
+  footer{ background:var(--teal-900); color:#bcd8d1; padding:40px 0; font-size:13.5px; }
+  footer a{ color:#fff; }
+  footer .sources{ margin-top:18px; display:flex; flex-wrap:wrap; gap:10px 18px; }
+  footer .sources a{ color:#9fc9c0; font-size:12.5px; text-decoration:none; }
+
+  .compare-row{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  @media(max-width:700px){ .compare-row{ grid-template-columns:1fr; } }
+
+  .num-badge{
+    width:30px; height:30px; border-radius:50%; background:var(--teal-700); color:#fff; display:flex;
+    align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:600; font-size:14px; flex-shrink:0;
+  }
+  .option-card{ display:flex; gap:16px; align-items:flex-start; }
+  .option-card .body h4{ font-size:16px; margin-bottom:6px; }
+  .option-card .body p{ font-size:14.5px; color:var(--ink-soft); }
+
+  .toc{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+  .toc a{
+    font-size:13px; font-weight:500; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16);
+    color:#e2f1ee; padding:7px 14px; border-radius:999px; text-decoration:none;
+  }
+  .disclaimer-bar{ background:var(--gold-100); border-bottom:1px solid #ecd68a; padding:10px 0; text-align:center; font-size:13px; color:#6b4e0f; }
+</style>
+</head>
+<body>
+
+<div class="disclaimer-bar">
+  Reference guide — figures based on the Hajj 2026 Policy (most recent finalized policy). Hajj Policy 2027 pre-registration is open now; exact 2027 costs/dates will update once MoRA publishes the final policy.
+</div>
+
+<nav class="navbar">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="1.5" stroke="#c9a227" stroke-width="1.6"/><path d="M6 10h12M10 6v12" stroke="#c9a227" stroke-width="1.2"/></svg>
+      Hajj 2027 · Group Guide
+    </div>
+    <div class="navlinks">
+      <a href="#status">Status</a>
+      <a href="#categories">Categories</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#apply">How to apply</a>
+      <a href="#banks">Banks</a>
+      <a href="#installments">Payments</a>
+      <a href="#halal">Is it halal?</a>
+      <a href="#private">Private fallback</a>
+      <a href="#group">Group of 5 plan</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="hero-pattern" viewBox="0 0 1080 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="star8" width="80" height="80" patternUnits="userSpaceOnUse">
+        <path d="M40 4 L48 32 L76 40 L48 48 L40 76 L32 48 L4 40 L32 32 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1080" height="400" fill="url(#star8)"/>
+  </svg>
+  <div class="wrap">
+    <span class="hero-eyebrow">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Prepared 3 July 2026 · for a group of 5 friends
+    </span>
+    <h1>Everything you need to plan Hajj 2027 from Pakistan — together.</h1>
+    <p class="sub">Government scheme categories, facilities, bank list, installment schedule, the halal ruling on paying through banks, private-scheme fallback costs, and a concrete plan to keep your group of five travelling together even if only some of you are selected.</p>
+    <div class="hero-stats">
+      <div class="stat-pill"><div class="num">PKR 1.15–1.25M</div><div class="lbl">Government package / person</div></div>
+      <div class="stat-pill"><div class="num">PKR 1.37–2.5M+</div><div class="lbl">Private package / person</div></div>
+      <div class="stat-pill"><div class="num">14</div><div class="lbl">Designated banks</div></div>
+      <div class="stat-pill"><div class="num">2 – 3</div><div class="lbl">Interest-free installments</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- STATUS -->
+<section class="section" id="status">
+  <div class="wrap">
+    <span class="eyebrow">Where things stand today</span>
+    <h2 class="title">Hajj 2027 is already open for pre-registration</h2>
+    <p class="lead">Hajj 2026 has already taken place. The active cycle for your group is <strong>Hajj 2027</strong>. Here's exactly where that stands right now.</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="badge badge-gold">Live now</span>
+        <h3 style="margin-top:10px;">Pre-registration open</h3>
+        <div class="meta">Opened 22 June 2026</div>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Free — no payment required. Register with CNIC + valid passport at <a href="https://hajj.mora.gov.pk" target="_blank">hajj.mora.gov.pk</a> or any designated bank branch.</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-teal">Hard requirement</span>
+        <h3 style="margin-top:10px;">Passport validity</h3>
+        <div class="meta">Non-negotiable eligibility check</div>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Every applicant's passport must be valid through at least <strong>16 November 2027</strong>. Renew now if anyone in the group is close to that.</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">Pending</span>
+        <h3 style="margin-top:10px;">Hajj Policy 2027</h3>
+        <div class="meta">Not yet published</div>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Final costs, installment dates and quotas are announced once MoRA releases the full policy — expected to mirror the 2026 structure below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section" style="background:var(--teal-50);" id="categories">
+  <div class="wrap">
+    <span class="eyebrow">Section 1</span>
+    <h2 class="title">How many categories are there?</h2>
+    <p class="lead">Three schemes in total. Quota is split roughly 50:50 between government and private nationally.</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M4 10l8-6 8 6M6 10v9h12v-9" stroke="#0f5f55" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19v-5h4v5" stroke="#0f5f55" stroke-width="1.6"/></svg>
+        <h3 style="margin-top:12px;">A. Government scheme</h3>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Cheapest, ministry-run. Split into <strong>Long package</strong> (38–42 days, 8–10 days Madinah) and <strong>Short package</strong> (20–25 days, 4–6 days Madinah).</p>
+        <span class="badge badge-teal" style="margin-top:12px;">PKR 1.15M – 1.25M</span>
+      </div>
+      <div class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M4 20l6-14 2 5 2-5 6 14" stroke="#c9522f" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <h3 style="margin-top:12px;">B. Private scheme</h3>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Run by licensed Hajj Group Organizers (HGOs). Three tiers: <strong>Economy</strong>, <strong>Standard</strong>, <strong>Premium / 5-star</strong>.</p>
+        <span class="badge badge-coral" style="margin-top:12px;">PKR 1.37M – 2.5M+</span>
+      </div>
+      <div class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8h14M5 16h14" stroke="#a3791b" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3 style="margin-top:12px;">C. Sponsorship scheme</h3>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Overseas Pakistanis pay in USD to sponsor a pilgrim inside Pakistan. No balloting — first-come, first-served.</p>
+        <span class="badge badge-gold" style="margin-top:12px;">Paid in USD abroad</span>
+      </div>
+    </div>
+    <div class="callout callout-teal" style="margin-top:24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><path d="M12 22c5-4 8-8.5 8-13a8 8 0 10-16 0c0 4.5 3 9 8 13z" stroke="#0f5f55" stroke-width="1.6"/><circle cx="12" cy="9" r="1.4" fill="#0f5f55"/></svg>
+      <p><strong>Hardship quota:</strong> ~1,000 seats are reserved nationally for split/broken families, a Mahram for a successful female applicant, or an attendant for a disabled/elderly pilgrim.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section" id="facilities">
+  <div class="wrap">
+    <span class="eyebrow">Section 2</span>
+    <h2 class="title">Facilities in each category</h2>
+    <p class="lead">What's actually included, and what changes as you move up in price.</p>
+    <table>
+      <tr><th>Included</th><th>Government (long/short)</th><th>Private — economy</th><th>Private — standard</th><th>Private — premium</th></tr>
+      <tr><td>Airfare + visa</td><td>Included</td><td>Included</td><td>Included</td><td>Included</td></tr>
+      <tr><td>Accommodation zone</td><td>Aziziyah / Misfalah (standard)</td><td>Maktab C — outer Mina, longest walk</td><td>Maktab B — mid-zone, shared facilities</td><td>Maktab A — 300–700m from Haram, private bathrooms</td></tr>
+      <tr><td>Hotel standard</td><td>Government-arranged</td><td>3-star</td><td>4-star</td><td>5-star</td></tr>
+      <tr><td>Meals</td><td>3 meals/day</td><td>Included, basic</td><td>Included, better variety</td><td>Included, premium</td></tr>
+      <tr><td>Transport</td><td>A/C bus transfers</td><td>Shared coach</td><td>Shared coach, better frequency</td><td>VIP / smaller group transport</td></tr>
+      <tr><td>Medical support</td><td>On-ground govt medical + Hajj Mission staff</td><td>Basic group medic</td><td>Group medic</td><td>Dedicated support</td></tr>
+      <tr><td>Guidance</td><td>Trained tour guide (govt)</td><td>Group guide</td><td>Group guide</td><td>Private/VIP guidance</td></tr>
+      <tr><td>Pre-departure training</td><td>Included</td><td>Varies by HGO</td><td>Varies by HGO</td><td>Usually included</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="section" style="background:var(--teal-50);" id="apply">
+  <div class="wrap">
+    <span class="eyebrow">Section 3</span>
+    <h2 class="title">Last dates to apply &amp; where</h2>
+    <p class="lead">Where to apply: online at <a href="https://hajj.mora.gov.pk" target="_blank">hajj.mora.gov.pk</a>, or in person at any of the 14 designated banks. Dates below follow the 2026 cycle as the working template for 2027.</p>
+    <div class="timeline">
+      <div class="tstep done">
+        <h4>Pre-registration <span class="when">opened 22 Jun 2026</span></h4>
+        <p>Create an individual account per person. CNIC + passport. No payment required at this stage.</p>
+        <span class="amount-tag">PKR 0</span>
+      </div>
+      <div class="tstep">
+        <h4>Formal application + 1st installment <span class="when">~ August 2026</span></h4>
+        <p>Registered applicants apply first; unregistered applicants get a second window if quota remains. Submit at a designated bank with all required documents.</p>
+        <span class="amount-tag">PKR 500,000 (long) / 550,000 (short)</span>
+      </div>
+      <div class="tstep">
+        <h4>2nd installment <span class="when">~ November 2026</span></h4>
+        <p>Paid at the same bank. Missing this deadline forfeits the seat, typically without refund of the first installment.</p>
+        <span class="amount-tag">PKR 650,000</span>
+      </div>
+      <div class="tstep">
+        <h4>Final adjustment, visa, training <span class="when">early 2027</span></h4>
+        <p>Any balance is settled once the final cost and SAR exchange rate are fixed. Vaccination, pre-departure training, and visa stamping happen in this window.</p>
+      </div>
+      <div class="tstep">
+        <h4>Departure <span class="when">~ May 2027</span></h4>
+        <p>Flights run out of 8 Pakistani cities via PIA, Saudia, Airblue and AirSial on a centrally-managed schedule.</p>
+      </div>
+    </div>
+    <div class="grid grid-2" style="margin-top:28px;">
+      <div class="card">
+        <h3>Required documents checklist</h3>
+        <ul style="padding-left:18px; font-size:14.5px; color:var(--ink-soft);">
+          <li>Machine-readable passport (valid to at least 16 Nov 2027)</li>
+          <li>CNIC / NICOP / SNIC copies</li>
+          <li>Passport-size photographs</li>
+          <li>Active bank account details</li>
+          <li>Contact info for a non-travelling relative</li>
+          <li>COVID vaccination certificate (applicants 65+)</li>
+          <li>Mahram affidavit (for a woman travelling without Mahram)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Selection method</h3>
+        <p style="font-size:14.5px;color:var(--ink-soft);">Expected to be <strong>first-come, first-served</strong> rather than balloting (as used for 2026), due to Saudi timelines. Applying early in the window matters — especially for a group.</p>
+        <h3 style="margin-top:18px;">Group ID feature</h3>
+        <p style="font-size:14.5px;color:var(--ink-soft);">MoRA's portal lets you bind multiple applications under one <strong>Group ID</strong> so friends/family are processed together. This reduces — but does not fully guarantee against — a split outcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANKS -->
+<section class="section" id="banks">
+  <div class="wrap">
+    <span class="eyebrow">Section 4</span>
+    <h2 class="title">Applying through different banks</h2>
+    <p class="lead">Any of these 14 banks can take your application and installments. The bank is only a collection channel — it does not change your package, price, or selection odds. Gold dot = fully Islamic bank.</p>
+    <div class="bank-grid">
+      <div class="bank-chip"><span class="dot"></span>Habib Bank (HBL)</div>
+      <div class="bank-chip"><span class="dot"></span>National Bank (NBP)</div>
+      <div class="bank-chip"><span class="dot"></span>United Bank (UBL)</div>
+      <div class="bank-chip"><span class="dot"></span>Allied Bank (ABL)</div>
+      <div class="bank-chip"><span class="dot"></span>MCB Bank</div>
+      <div class="bank-chip"><span class="dot"></span>Bank Alfalah</div>
+      <div class="bank-chip islamic"><span class="dot"></span>Meezan Bank</div>
+      <div class="bank-chip"><span class="dot"></span>Askari Bank</div>
+      <div class="bank-chip"><span class="dot"></span>Faysal Bank</div>
+      <div class="bank-chip"><span class="dot"></span>Bank of Punjab</div>
+      <div class="bank-chip"><span class="dot"></span>ZTBL</div>
+      <div class="bank-chip islamic"><span class="dot"></span>BankIslami Pakistan</div>
+      <div class="bank-chip islamic"><span class="dot"></span>Dubai Islamic Bank</div>
+      <div class="bank-chip"><span class="dot"></span>Habib Metropolitan</div>
+    </div>
+  </div>
+</section>
+
+<!-- HALAL -->
+<section class="section" style="background:var(--teal-50);" id="halal">
+  <div class="wrap">
+    <span class="eyebrow">Section 5</span>
+    <h2 class="title">Is it okay in Islam to apply through a bank?</h2>
+    <div class="compare-row">
+      <div class="callout callout-teal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><path d="M5 12l4 4 10-10" stroke="#0f5f55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <strong>Yes — permissible.</strong>
+          <p>Using a bank to deposit and transfer <em>your own</em> Hajj money is fine. The bank acts only as a collection channel for the government — no loan, no interest, no borrowing is involved. It's equivalent to paying any government fee at a bank counter.</p>
+        </div>
+      </div>
+      <div class="callout callout-coral">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><path d="M12 3l9 18H3L12 3z" stroke="#c9522f" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 9v5M12 17h.01" stroke="#c9522f" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <div>
+          <strong>Avoid this instead.</strong>
+          <p>Taking an <strong>interest-based loan</strong> to fund Hajj, or funding it from interest income, is where scholars raise concern — riba is haram. Most scholars say the Hajj obligation would still be technically fulfilled, but the sin remains and reward is reduced.</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout callout-gold" style="margin-top:20px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><circle cx="12" cy="12" r="9" stroke="#a3791b" stroke-width="1.6"/><path d="M12 8v5M12 16h.01" stroke="#a3791b" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <p><strong>Practical guidance:</strong> pay with your own halal savings — that alone resolves the issue. For extra peace of mind, route payments through an Islamic bank (Meezan, Dubai Islamic, or BankIslami above). Never take an interest-based loan for Hajj; use the government's own interest-free installment plan instead. For a personal ruling, consult a trusted local mufti.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALLMENTS -->
+<section class="section" id="installments">
+  <div class="wrap">
+    <span class="eyebrow">Section 6</span>
+    <h2 class="title">Installments — how much, which month</h2>
+    <p class="lead">No interest is charged. Pakistan also introduced a 3-installment option through designated banks for extra flexibility from 2026 onward.</p>
+    <table>
+      <tr><th>Stage</th><th>Timing</th><th>Amount</th><th>Notes</th></tr>
+      <tr><td>Pre-registration</td><td>Now (opened 22 Jun 2026)</td><td>PKR 0</td><td>Just CNIC + passport</td></tr>
+      <tr><td>1st installment</td><td>~ August</td><td>PKR 500,000 (long) / 550,000 (short)</td><td>Paid with formal application</td></tr>
+      <tr><td>2nd installment</td><td>~ November</td><td>PKR 650,000</td><td>Missing this forfeits the seat</td></tr>
+      <tr><td>Final adjustment</td><td>Early following year</td><td>Balance / refund</td><td>Set once SAR rate + final cost confirmed</td></tr>
+      <tr><td>Total package</td><td>—</td><td>PKR 1,150,000 – 1,250,000</td><td>Varies by city + package length</td></tr>
+    </table>
+    <div class="callout callout-teal" style="margin-top:20px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="6" width="18" height="13" rx="2" stroke="#0f5f55" stroke-width="1.6"/><path d="M3 10h18" stroke="#0f5f55" stroke-width="1.6"/></svg>
+      <p><strong>Set reminders now:</strong> a missed installment deadline forfeits your seat, and the first installment may not be refunded. For a group of 5, put every deadline in a shared calendar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE / FALLBACK -->
+<section class="section" style="background:var(--teal-50);" id="private">
+  <div class="wrap">
+    <span class="eyebrow">Section 7</span>
+    <h2 class="title">If you're not selected: private scheme charges &amp; fallback path</h2>
+    <p class="lead">Applying government-first, then moving to private if unselected, is a normal and well-established path in Pakistan's Hajj system.</p>
+
+    <h3 style="margin-bottom:14px;">Private package charges</h3>
+    <table>
+      <tr><th>Tier</th><th>Price / person</th><th>Hotel</th><th>Maktab zone</th></tr>
+      <tr><td>Economy</td><td>PKR 1,375,000 – 1,600,000</td><td>3-star</td><td>Maktab C — outer Mina, longest walk</td></tr>
+      <tr><td>Standard</td><td>PKR 1,650,000 – 2,000,000</td><td>4-star</td><td>Maktab B — mid-zone</td></tr>
+      <tr><td>Premium / 5-star</td><td>PKR 2,000,000 – 2,500,000+</td><td>5-star</td><td>Maktab A — 300–700m from Haram</td></tr>
+    </table>
+    <p style="font-size:13.5px;color:var(--ink-mute);margin-top:10px;">Even the cheapest private tier costs more than the top of the government range. Payment is usually 50% at booking, 50% by ~1 November — only 2 installments, no 3-installment option.</p>
+
+    <h3 style="margin:26px 0 14px;">Can you apply government-first, then fall back to private?</h3>
+    <div class="grid grid-2">
+      <div class="card">
+        <span class="badge badge-teal">Yes — built into policy</span>
+        <p style="font-size:14.5px;color:var(--ink-soft);margin-top:10px;">If not selected, you are not locked out. Private scheme reserves a dedicated <strong>leftover-applicant quota</strong> — for 2026, 22,097 of 60,000 private seats were reserved specifically for unsuccessful applicants, with priority over new applicants.</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">Timing caution</span>
+        <p style="font-size:14.5px;color:var(--ink-soft);margin-top:10px;">The private booking window historically <strong>closes earlier</strong> than expected (2026: 22 October, months before pre-Hajj flights). Start talking to an HGO in parallel — don't wait for a final rejection notice.</p>
+      </div>
+    </div>
+    <div class="callout callout-gold" style="margin-top:18px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="#a3791b" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <p><strong>Money caution:</strong> if you voluntarily withdraw from the government scheme after paying an installment to switch to private, that installment is typically forfeited. If MoRA itself does not select you, deposits are normally refunded. Confirm the exact 2027 rule once published.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP OF 5 -->
+<section class="section" id="group">
+  <div class="wrap">
+    <span class="eyebrow">Section 8 — the plan for your group</span>
+    <h2 class="title">Keeping 5 friends together if only some are selected</h2>
+    <p class="lead">Government and private-scheme flights are separate allocations — you cannot mix a government seat and a privately-booked seat onto the exact same flight number. Here is how to handle it in practice.</p>
+
+    <div class="card" style="margin-bottom:24px;">
+      <h3>Step 1 — reduce the risk of a split before it happens</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);">Register all 5 friends under <strong>one Group ID</strong> in the MoRA portal at pre-registration. This signals to the ministry that you should be assigned the same batch, city, and flight together. It reduces — but does not 100% guarantee against — a partial split if your departure city's quota runs out mid-group.</p>
+    </div>
+
+    <div class="grid" style="gap:18px;">
+      <div class="card option-card">
+        <div class="num-badge">A</div>
+        <div class="body">
+          <h4>Align dates, not flights <span class="badge badge-teal" style="margin-left:8px;">recommended balance</span></h4>
+          <p>Once the 1–2 selected friends get their assigned government batch (departure city + date), choose a private HGO whose group departs the <strong>same city on the same or adjacent day</strong>. Not the identical aircraft, but you travel to the airport together and typically land within hours of each other. Ask the HGO to match your government batch date directly.</p>
+        </div>
+      </div>
+      <div class="card option-card">
+        <div class="num-badge">B</div>
+        <div class="body">
+          <h4>Everyone goes private <span class="badge badge-gold" style="margin-left:8px;">guaranteed togetherness</span></h4>
+          <p>The 1–2 selected friends decline/forfeit their government seat, and all 5 book the <strong>same private package with one HGO</strong> — identical flight, hotel, and itinerary throughout. Cleanest option if staying together matters more than cost; costs the forfeited government deposit plus the private-scheme premium.</p>
+        </div>
+      </div>
+      <div class="card option-card">
+        <div class="num-badge">C</div>
+        <div class="body">
+          <h4>Split for cost, reunite on the ground <span class="badge badge-coral" style="margin-left:8px;">most economical</span></h4>
+          <p>Keep the cheaper government seats for those selected; the rest go private. Different flights/hotels, but coordinate by phone/WhatsApp to meet during the Hajj rituals themselves (Mina, Arafat, Muzdalifah), where pilgrims from all schemes mix regardless of package.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout-teal" style="margin-top:24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><path d="M4 12l6 6L20 6" stroke="#0f5f55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p><strong>Suggested default for your document:</strong> lead with <strong>Option A</strong> as the practical middle ground, note <strong>Option B</strong> as the upgrade if budget allows, and keep <strong>Option C</strong> as the fallback for the most cost-conscious members of the group.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div style="color:#fff; font-family:'Poppins',sans-serif; font-weight:600; margin-bottom:6px;">Hajj 2027 Group Guide</div>
+    <div>Compiled 3 July 2026 for personal planning use. Figures are based on the finalized Hajj Policy 2026 as the working reference — confirm exact 2027 figures once MoRA publishes the official Hajj Policy 2027. Not a fatwa; consult a local scholar for a personal religious ruling.</div>
+    <div class="sources">
+      <a href="https://mora.gov.pk/SiteImage/Misc/files/200825_Hajj-Policy-2026.pdf" target="_blank">Hajj Policy 2026 (MoRA PDF)</a>
+      <a href="https://hajj.mora.gov.pk" target="_blank">hajj.mora.gov.pk</a>
+      <a href="https://www.mora.gov.pk" target="_blank">mora.gov.pk</a>
+      <a href="https://www.arabnews.com/node/2610047/pakistan" target="_blank">Arab News — Hajj Policy 2026 approved</a>
+      <a href="https://al-khair.org/private-vs-government-hajj/" target="_blank">Private vs Government Hajj — Al-Khair</a>
+      <a href="https://blog.wego.com/private-hajj-package-from-pakistan/" target="_blank">Private Hajj packages — Wego</a>
+      <a href="https://rsf.org.pk/private-hajj-scheme/" target="_blank">Private Hajj leftover-quota scheme</a>
+      <a href="https://islamqa.info/en/answers/126056" target="_blank">Riba ruling — IslamQA</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
